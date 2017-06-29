@@ -1,0 +1,58 @@
+html{
+	background-color: lightblue
+}
+
+p {
+	color: ivory;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+img {
+	width: 100%;
+}
+
+#world_text{
+	z-index: 1;
+}
+
+#world_image{
+	opacity: 0;
+	z-index: 0;
+}
+
+@media only screen and (max-width: 400px){
+	p {
+		font-size:20px;
+	}
+}
+
+@media only screen and (min-width: 401px) and (max-width: 800px){
+	p {
+		font-size:25px;
+	}
+}
+
+@media only screen and (min-width: 801px)and (max-width: 1200px){
+	p {
+		font-size:50px;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	p {
+		font-size:80px;
+	}
+}
+
+@media print{
+	img {
+		visibility: hidden;
+	}
+	p {
+		color: black;
+		font-size: 12pt;
+		text-align: left;
+	}
+}

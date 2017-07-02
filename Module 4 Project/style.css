@@ -1,0 +1,202 @@
+/* MAIN BODY */
+body{
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+main{
+    width: 75%;
+    float: left;
+    background-color: #FBEEC1;
+}
+
+aside{
+    width: 25%;
+    float: left;
+    background-color: #BC986A;
+    
+}
+
+.section_head{
+    background-color: #8D8741;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    background-color: #659DBD;
+    color: white;
+    font-size: 1.5em;
+}
+
+header h1, header h2{
+    text-align: center;
+}
+
+/* PICTURE AND CONTACT INFO */
+#contact{
+    width: 100%;
+    overflow: auto;
+}
+
+#picture{
+    width: 33%;
+    float: left;
+}
+
+#picture img{
+    width: 100%;
+}
+
+#contact_list{
+    width: 67%;
+    float: right;
+    min-height: 150px;
+}
+
+.contact_line{
+    width: 100%;
+}
+
+.contact_icon{
+    width: 10%;
+    min-height: 50px;
+    float: left;
+}
+
+.contact_info{
+    width: 90%;
+    min-height: 50px;
+    position: relative;
+    left: 20px;  
+}
+
+
+/* Work Experience */
+#work_experience{
+    clear: left;
+    width: 100%;
+}
+
+.work_entry{
+    width: 100%;
+}
+
+.work_year_begin{
+    width: 7%;
+    float: left;
+}
+
+.work_year_begin::after{
+    content: " to ";
+}
+
+.work_year_end{
+    width: 7%;
+    float: left;
+}
+
+.work_title{
+    width: 86%;
+    font-weight: bold;
+}
+
+.work_description{
+    width: 86%;
+    clear: left;
+    margin-left: 14%;
+}
+
+
+/* EDUCATION */
+#education{
+    width: 100%;
+}
+
+.education_entry{
+    width: 100%;
+}
+
+.grad_date{
+    width: 14%;
+    float: left;
+}
+
+.degree{
+    width: 43%;
+    float: left;
+}
+
+.university{
+    width: 43%;
+    float: left;
+
+}
+
+#volunter{
+    width: 100%;
+
+}
+
+/* Projects */
+iframe{
+    width: 100%;
+}
+
+/* BORDERS */
+header, #contact, #work_experience, #education, #volunteer, footer {
+}
+
+footer{
+    clear: left;
+    background-color: #DAAD86;
+}
+
+@media print{
+    body{
+        background-color: white;
+        color: black;
+        
+    }
+    aside{
+        display: none;
+    }
+    img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    body{
+        width: 100%;
+        margin: 0;
+    }
+    .work_year_begin{
+        display: none;
+    }
+
+    .work_year_begin::after{
+        display: none;
+    }
+    .work_year_end{
+        width: 14%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 999px){
+    body{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    
+}
